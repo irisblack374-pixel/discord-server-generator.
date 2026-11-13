@@ -1,219 +1,231 @@
-فت🚀 Discord Server Generator
+# 🚀 Discord Server Generator
 
 <p align="center">
   <strong>A Node.js Terminal Tool for Discord Server Automation</strong>
   <br>
   <strong>أداة طرفية لأتمتة عمليات سيرفرات ديسكورد</strong>
-</p>---
+</p>
 
-⚠️ DISCLAIMER | تحذير مهم جداً
+<p align="center">
+  <img alt="Node.js 18+" src="https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+  <img alt="Terminal UI" src="https://img.shields.io/badge/Interface-Terminal-blue?style=flat-square">
+  <img alt="Unofficial Discord project" src="https://img.shields.io/badge/Discord-Unofficial-5865F2?style=flat-square&logo=discord&logoColor=white">
+</p>
 
-🇸🇦 العربية
-
-تنبيه: هذا المشروع يستخدم Self-Bot (User Token) بدلاً من حساب بوت رسمي.
-
-استخدام Self-Bots مخالف لشروط خدمة Discord (Discord Terms of Service).
-
-قد يؤدي استخدام هذه الأداة إلى:
-
-- الحظر الدائم لحساب Discord المستخدم.
-- تقييد الحساب أو تعطيل بعض وظائفه.
-- فقدان الوصول إلى السيرفرات والبيانات المرتبطة بالحساب.
-- اتخاذ إجراءات أخرى من Discord وفقاً لسياساتها.
-
-استخدامك لهذا المشروع يكون على مسؤوليتك الشخصية بالكامل.
-
-لا يتحمل مطور المشروع أي مسؤولية عن حظر الحسابات أو فقدان البيانات أو أي أضرار ناتجة عن استخدام الأداة.
-
-هذا المشروع غير رسمي، وغير تابع لشركة Discord أو معتمد منها.
-
-🇬🇧 English
-
-WARNING: This project uses a Self-Bot (User Token) instead of an official Discord Bot account.
-
-Using Self-Bots violates Discord's Terms of Service (ToS).
-
-Using this tool may result in:
-
-- Permanent suspension of your Discord account.
-- Account restrictions or disabled functionality.
-- Loss of access to servers and associated data.
-- Additional enforcement actions by Discord.
-
-You use this project entirely at your own risk.
-
-The developer assumes no responsibility for account bans, data loss, or any damages resulting from its use.
-
-This is an unofficial project and is not affiliated with or endorsed by Discord.
+<p align="center">
+  <a href="#-تنبيه-وإخلاء-المسؤولية">العربية</a> ·
+  <a href="#-disclaimer">English</a>
+</p>
 
 ---
 
-📖 About the Project | حول المشروع
+> [!CAUTION]
+> ## ⚠️ تنبيه مهم — اقرأ قبل الاستخدام
+>
+> يستخدم هذا المشروع آلية **Self-Bot (User Token)** بدلاً من حساب بوت Discord رسمي. استخدام Self-Bots يخالف **شروط خدمة Discord (Terms of Service)**، وقد يؤدي إلى تقييد الحساب أو حظره نهائياً.
+>
+> باستخدامك للمشروع، فأنت تتحمل المسؤولية الكاملة عن النتائج المترتبة على استخدامه، بما في ذلك حظر الحساب أو فقدان البيانات. لا يتحمل مطور المشروع مسؤولية هذه النتائج.
+>
+> المشروع غير رسمي، ولا يتبع Discord Inc. أو يحظى بموافقتها.
 
-Discord Server Generator is a Node.js-based terminal application designed to automate certain Discord server-related workflows.
-
-The project uses an interactive Terminal User Interface (TUI) built with the "blessed" library.
-
-The application was designed around automated workflows, browser-based OAuth2 authorization, and monitoring Discord server activity.
-
-🇸🇦 بالعربية
-
-Discord Server Generator هي أداة طرفية مكتوبة بلغة JavaScript باستخدام Node.js.
-
-تهدف إلى تنظيم وأتمتة بعض العمليات المتعلقة بسيرفرات Discord، من خلال واجهة طرفية تفاعلية ونظام متابعة للعمليات.
-
----
-
-✨ Features | المميزات
-
-- 🖥️ Interactive Terminal UI: واجهة طرفية تفاعلية باستخدام مكتبة Blessed.
-- ⚙️ Configurable Workflows: إمكانية تحديد إعدادات العمليات من واجهة الأداة.
-- 🌐 OAuth2 Integration: دعم تدفقات التفويض الرسمية لإضافة البوتات.
-- 📋 Activity Monitoring: متابعة الأحداث والأنشطة المرتبطة بالسيرفرات.
-- 🔗 Link Management: تنظيم روابط التفويض وحفظها محلياً.
-- 🔄 Error Handling: التعامل مع الأخطاء والاستجابات غير المتوقعة.
-- ⏱️ Rate Limit Awareness: مراعاة حدود الطلبات التي تفرضها Discord.
-- 📱 Termux Compatibility: إمكانية تشغيل واجهة Node.js على بيئة Termux المتوافقة.
-
-«ملاحظة: لا تعني هذه الميزات أن الأداة معتمدة من Discord أو أن جميع العمليات مدعومة رسمياً.»
+> [!CAUTION]
+> ## ⚠️ Important Disclaimer
+>
+> This project uses **Self-Bot (User Token)** functionality instead of an official Discord bot account. Self-Bots violate the **Discord Terms of Service** and may result in account restrictions or permanent suspension.
+>
+> You are entirely responsible for your use of this project and any resulting consequences, including account bans or data loss. The developer accepts no responsibility for such consequences.
+>
+> This is an unofficial project and is not affiliated with or endorsed by Discord Inc.
 
 ---
 
-🛠️ Requirements | المتطلبات
+## 📚 المحتويات | Table of Contents
 
-المتطلبات العامة لتشغيل بيئة المشروع:
-
-Requirement| Description
-Node.js| Version 18 or newer
-npm| Node.js package manager
-Git| Repository management
-Termux| Optional for Android
-Termux:API| Optional Android integration
+- [نبذة عن المشروع | About](#-نبذة-عن-المشروع--about)
+- [المميزات | Features](#-المميزات--features)
+- [المتطلبات | Requirements](#-المتطلبات--requirements)
+- [هيكل الملفات | Project Structure](#-هيكل-الملفات--project-structure)
+- [الأمان | Security](#-الأمان--security)
+- [الأسئلة الشائعة | FAQ](#-الأسئلة-الشائعة--faq)
+- [المراجع الرسمية | Official Resources](#-المراجع-الرسمية--official-resources)
 
 ---
 
-📁 Project Structure | هيكل المشروع
+## 📖 نبذة عن المشروع | About
 
+### 🇸🇦 العربية
+
+**Discord Server Generator** أداة تعمل من خلال سطر الأوامر، ومكتوبة بلغة **JavaScript** باستخدام **Node.js**. صُممت لتنظيم وأتمتة مجموعة من العمليات المتعلقة بسيرفرات Discord من خلال واجهة طرفية تفاعلية (TUI).
+
+تعتمد واجهة الأداة على مكتبة `blessed`، وتتضمن مكونات للتعامل مع عمليات التفويض ومتابعة الأحداث وإدارة سجلات الروابط ومعالجة الأخطاء.
+
+### 🇬🇧 English
+
+**Discord Server Generator** is a command-line application written in **JavaScript** and powered by **Node.js**. It is designed to organize and automate a set of Discord server-related workflows through an interactive Terminal User Interface (TUI).
+
+The interface is built with the `blessed` library. The project includes components for authorization workflows, activity monitoring, link records, and error handling.
+
+---
+
+## ✨ المميزات | Features
+
+| الميزة | Feature | الوصف | Description |
+|:--|:--:|:--|:--|
+| 🖥️ واجهة طرفية تفاعلية | Interactive TUI | واجهة تفاعلية باستخدام مكتبة `blessed`. | Interactive terminal interface powered by `blessed`. |
+| ⚙️ إدخال الإعدادات | Configurable Input | تحديد إعدادات العملية من داخل الواجهة. | Configure workflow options through the interface. |
+| 🌐 تكامل OAuth2 | OAuth2 Integration | التعامل مع روابط التفويض الخاصة بالتطبيقات. | Handles application authorization links. |
+| 📋 متابعة الأحداث | Activity Monitoring | متابعة الأحداث ذات الصلة أثناء التشغيل. | Monitors relevant activity during operation. |
+| 🔗 إدارة الروابط | Link Management | حفظ سجلات الروابط في ملف محلي. | Stores link records in a local file. |
+| 🔄 معالجة الأخطاء | Error Handling | التعامل مع الأخطاء والاستجابات غير المتوقعة. | Handles errors and unexpected responses. |
+| ⏱️ مراعاة حدود المعدل | Rate Limit Awareness | التعامل مع استجابات حدود الطلبات. | Accounts for rate-limit responses. |
+| 📱 دعم Termux | Termux Compatibility | إمكانية تشغيل بيئة المشروع على Termux. | Supports running the project environment in Termux. |
+
+> **ملاحظة | Note:** ذكر هذه المميزات لا يعني أن المشروع معتمد من Discord أو أن جميع عملياته مدعومة رسمياً.  
+> These features do not imply Discord endorsement or official support for every operation.
+
+---
+
+## 🛠️ المتطلبات | Requirements
+
+| المتطلب | Requirement | التفاصيل | Details |
+|:--|:--|:--|:--|
+| Node.js | Node.js | الإصدار 18 أو أحدث | Version 18 or newer |
+| npm | npm | مدير الحزم المرفق مع Node.js | Package manager included with Node.js |
+| Git | Git | لإدارة واستنساخ المستودع | For repository management and cloning |
+| Termux | Termux | لمستخدمي Android | For Android users |
+| Termux:API | Termux:API | تكامل إضافي مع Android عند الحاجة | Optional Android integration when required |
+
+---
+
+## 📁 هيكل الملفات | Project Structure
+
+```text
 discord-server-generator/
 │
 ├── mass.js
-│   └── Main application entry point
+│   └── الملف الأساسي للتطبيق
 │
 ├── package.json
-│   └── Project dependencies and scripts
+│   └── معلومات المشروع والمكتبات المطلوبة
 │
 ├── .env.example
-│   └── Environment variable template
+│   └── نموذج متغيرات البيئة
 │
 ├── .gitignore
-│   └── Excluded files and sensitive data
+│   └── الملفات المستثناة من Git
 │
 ├── links.txt
-│   └── Locally stored link records
+│   └── سجل الروابط المحلي
 │
 └── README.md
-    └── Project documentation
+    └── توثيق المشروع
+```
 
-File Descriptions
+### وظيفة الملفات | File Descriptions
 
-- mass.js: Main application source file.
-- package.json: Defines dependencies and project metadata.
-- .env.example: Example environment configuration.
-- .gitignore: Prevents sensitive and unnecessary files from being committed.
-- links.txt: Local record file for generated links.
-- README.md: Project documentation.
-
----
-
-🔐 Security | الأمان
-
-Security is important when working with Discord integrations.
-
-Recommended practices:
-
-1. Never publish Discord account tokens.
-2. Never upload your ".env" file to GitHub.
-3. Keep sensitive credentials outside the source code.
-4. Use official Discord OAuth2 authorization for bot integrations.
-5. Never share authentication credentials with third-party services.
-6. Revoke exposed credentials immediately.
-7. Avoid storing unnecessary personal information.
-
-Important: A Discord user token is highly sensitive authentication information. It should never be treated like an ordinary API key.
+| الملف | الوظيفة |
+|:--|:--|
+| `mass.js` | الملف الرئيسي الذي يحتوي على كود التطبيق. |
+| `package.json` | يحدد بيانات المشروع والمكتبات المطلوبة. |
+| `.env.example` | نموذج توضيحي لمتغيرات البيئة. |
+| `.gitignore` | يمنع إضافة الملفات الحساسة أو غير الضرورية إلى Git. |
+| `links.txt` | ملف محلي للاحتفاظ بسجلات الروابط. |
+| `README.md` | ملف توثيق المشروع. |
 
 ---
 
-❓ FAQ | الأسئلة الشائعة
+## 🔐 الأمان | Security
 
-1. What does TOKEN_INVALID mean?
+### 🇸🇦 إرشادات الأمان
 
-This error indicates that an authentication token was rejected.
+- لا تنشر رموز الدخول أو بيانات المصادقة.
+- لا ترفع ملف `.env` إلى مستودع GitHub.
+- لا تضع بيانات الاعتماد مباشرة داخل الكود.
+- تعامل مع User Token باعتباره معلومة سرية شديدة الحساسية.
+- لا تشارك بيانات المصادقة مع أي جهة أخرى.
+- إذا انكشف أي رمز دخول، اتخذ الإجراءات اللازمة لتأمين الحساب فوراً.
 
-Do not share your token with anyone. If it has been exposed, secure your account and review its active sessions.
+### 🇬🇧 Security Guidelines
 
-2. Why isn't the bot being recognized?
-
-Possible reasons include:
-
-- Incorrect bot application configuration.
-- Incorrect application/client ID.
-- Missing permissions.
-- OAuth2 configuration problems.
-
-Verify the application through the official Discord Developer Portal.
-
-3. Why doesn't the browser open automatically?
-
-On Android, browser integration may depend on Termux and its supported API components.
-
-Check that your Android environment supports the required integration.
-
-4. Is this an official Discord application?
-
-No. This is an independent, unofficial project.
-
-5. Is using a Self-Bot safe?
-
-No. Self-Bot automation violates Discord's Terms of Service and may result in account suspension.
-
-6. Can I use an official bot instead?
-
-Yes. For supported integrations, use the official Discord Developer Portal and OAuth2 bot authorization.
+- Never publish authentication tokens or credentials.
+- Never commit your `.env` file to GitHub.
+- Do not hardcode credentials into source files.
+- Treat user tokens as highly sensitive information.
+- Never share authentication credentials with third parties.
+- If a credential is exposed, take immediate steps to secure the account.
 
 ---
 
-🔗 Useful Resources | روابط مفيدة
+## ❓ الأسئلة الشائعة | FAQ
 
-- "Discord Official Website" (https://discord.com/)
-- "Discord Developer Portal" (https://discord.com/developers/applications)
-- "Discord Developer Documentation" (https://discord.com/developers/docs)
-- "Discord Terms of Service" (https://discord.com/terms)
-- "Discord Developer Policy" (https://discord.com/developers/docs/policies-and-agreements/developer-policy)
+<details>
+<summary><strong>🔴 ما معنى الخطأ TOKEN_INVALID؟</strong></summary>
+
+يعني أن بيانات المصادقة المقدمة لم يتم قبولها. تحقق من إعدادات المصادقة، ولا تشارك بيانات الدخول مع أي شخص.
+</details>
+
+<details>
+<summary><strong>🟠 لماذا لا يتم التعرف على البوت؟</strong></summary>
+
+قد تكون هناك مشكلة في إعدادات التطبيق أو Client ID أو إعدادات التفويض أو الصلاحيات المطلوبة. راجع إعدادات التطبيق في Discord Developer Portal.
+</details>
+
+<details>
+<summary><strong>🟡 لماذا لا يفتح المتصفح تلقائياً؟</strong></summary>
+
+قد يعتمد فتح المتصفح على بيئة التشغيل وإعدادات Android ومكونات Termux المتوافقة، بما في ذلك Termux:API عند الحاجة.
+</details>
+
+<details>
+<summary><strong>🔵 هل الأداة رسمية من Discord؟</strong></summary>
+
+لا. هذا مشروع مستقل وغير تابع لشركة Discord Inc. أو معتمد منها.
+</details>
+
+<details>
+<summary><strong>🟣 هل استخدام Self-Bot آمن؟</strong></summary>
+
+لا يمكن اعتباره استخداماً آمناً أو مدعوماً؛ فهو يخالف شروط خدمة Discord وقد يؤدي إلى تقييد الحساب أو حظره.
+</details>
+
+<details>
+<summary><strong>🟢 أين أجد معلومات Discord الرسمية؟</strong></summary>
+
+يمكنك الرجوع إلى [Discord Developer Portal](https://discord.com/developers/applications) و[وثائق المطورين](https://discord.com/developers/docs).
+</details>
 
 ---
 
-⚖️ Legal Notice | إخلاء المسؤولية
+## 🌐 المراجع الرسمية | Official Resources
 
-This project is provided for educational and research purposes.
+| المصدر | الرابط |
+|:--|:--|
+| Discord | [discord.com](https://discord.com/) |
+| Discord Developer Portal | [Applications](https://discord.com/developers/applications) |
+| Discord Developer Documentation | [Documentation](https://discord.com/developers/docs) |
+| Discord Terms of Service | [Terms](https://discord.com/terms) |
+| Discord Developer Policy | [Policy](https://discord.com/developers/docs/policies-and-agreements/developer-policy) |
 
-The project is not affiliated with, maintained, sponsored, or endorsed by Discord Inc.
+---
 
-Discord is a trademark of Discord Inc.
+## ⚖️ إخلاء المسؤولية | Legal Notice
 
-The developer does not guarantee uninterrupted operation, compatibility, or availability of third-party services.
+هذا المشروع مستقل ومقدم كما هو، لأغراض التعلم والبحث. لا توجد أي علاقة رسمية بينه وبين Discord Inc. ولا يقدم المطور أي ضمان لاستمرارية عمل الخدمات الخارجية أو توافقها.
+
+This is an independent project provided "as is" for educational and research purposes. It is not affiliated with Discord Inc. The developer makes no guarantees regarding the availability, compatibility, or uninterrupted operation of third-party services.
+
+**Discord is a trademark of Discord Inc.**
 
 ---
 
-👨‍💻 Author | المطور
+## 👨‍💻 المطور | Author
 
-Discord Server Generator
-
-Developed with Node.js and JavaScript.
-
----
+**Discord Server Generator**  
+Built with **Node.js** and **JavaScript**.
 
 <p align="center">
-  Made with ❤️ for the developer community
+  <strong>Made with ❤️ for the developer community</strong>
   <br>
-  <strong>Unofficial Discord Project</strong>
+  <sub>Unofficial Discord Project</sub>
 </p>
