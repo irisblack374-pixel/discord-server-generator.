@@ -1,4 +1,4 @@
-# Discord Server Gen v7.0
+# Discord Server Gen
 
 > **Unofficial third-party project. Not affiliated with, endorsed by, or supported by Discord.**
 
