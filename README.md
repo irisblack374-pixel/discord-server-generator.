@@ -21,13 +21,23 @@
 > [!CAUTION]
 > ## ⚠️ تنبيه مهم وإخلاء المسؤولية | Disclaimer
 >
-> **العربية:** هذا المشروع يتضمن آلية **Self-Bot (User Token)** بدلاً من الاعتماد حصراً على حساب بوت رسمي. استخدام Self-Bots يخالف شروط خدمة Discord (Terms of Service)، وقد يؤدي إلى تقييد الحساب أو حظره نهائياً. استخدامك للمشروع يكون على مسؤوليتك الشخصية بالكامل. أنت تتحمل مسؤولية أي نتائج، بما في ذلك حظر الحساب أو فقدان البيانات. لا يتحمل مطور المشروع مسؤولية أي أضرار ناتجة عن الاستخدام. المشروع غير رسمي وغير تابع لـDiscord Inc. أو معتمد منها.
+> ### 🇸🇦 العربية
+
+ هذا المشروع يتضمن آلية **Self-Bot (User Token)** بدلاً من الاعتماد حصراً على حساب بوت رسمي. استخدام Self-Bots يخالف شروط خدمة Discord (Terms of Service)، وقد يؤدي إلى تقييد الحساب أو حظره نهائياً. استخدامك للمشروع يكون على مسؤوليتك الشخصية بالكامل. أنت تتحمل مسؤولية أي نتائج، بما في ذلك حظر الحساب أو فقدان البيانات. لا يتحمل مطور المشروع مسؤولية أي أضرار ناتجة عن الاستخدام. المشروع غير رسمي وغير تابع لـDiscord Inc. أو معتمد منها.
 >
-> **English:** This project includes **Self-Bot (User Token)** functionality rather than relying exclusively on an official Discord bot account. Self-Bots violate Discord's Terms of Service and may result in account restrictions or permanent suspension. You use this project entirely at your own risk and are responsible for any consequences, including account bans or data loss. The developer accepts no responsibility for damages resulting from use. This is an unofficial project and is not affiliated with or endorsed by Discord Inc.
+> ### 🇬🇧 English
+
+ This project includes **Self-Bot (User Token)** functionality rather than relying exclusively on an official Discord bot account. Self-Bots violate Discord's Terms of Service and may result in account restrictions or permanent suspension. You use this project entirely at your own risk and are responsible for any consequences, including account bans or data loss. The developer accepts no responsibility for damages resulting from use. This is an unofficial project and is not affiliated with or endorsed by Discord Inc.
 
 ---
 
-<div align="center">\n\n## 🧭 دليل المحتويات | Navigation\n\n*انتقل مباشرةً إلى القسم الذي تحتاجه · Jump to any section*\n\n</div>
+<div align="center">
+
+## 🧭 دليل المحتويات | Navigation
+
+*انتقل مباشرةً إلى القسم الذي تحتاجه · Jump to any section*
+
+</div>
 
 - [📖 نبذة عن المشروع | About](#-نبذة-عن-المشروع--about)
 - [✨ المميزات | Features](#-المميزات--features)
@@ -41,17 +51,25 @@
 
 ---
 
-## 📖 نبذة عن المشروع | About\n\n> **Project overview** · نظرة سريعة على فكرة المشروع وتقنياته.
+## 📖 نبذة عن المشروع
+### 🇬🇧 About the Project
+
+> **Project overview** · نظرة سريعة على فكرة المشروع وتقنياته.
 
 ### 🇸🇦 العربية
+
 **Discord Server Generator** أداة طرفية مكتوبة بلغة JavaScript باستخدام Node.js. صُممت لتنظيم بعض العمليات المتعلقة بسيرفرات Discord من خلال واجهة طرفية تفاعلية (TUI). تعتمد الواجهة على مكتبة `blessed`، ويتضمن المشروع مكونات لإدارة الإعدادات ومتابعة الأحداث والتعامل مع سجلات الروابط والأخطاء.
 
 ### 🇬🇧 English
+
 **Discord Server Generator** is a terminal application written in JavaScript and powered by Node.js. It is designed to organize Discord server-related workflows through an interactive Terminal User Interface (TUI). The interface uses the `blessed` library, and the project includes components for configuration, activity monitoring, link records, and error handling.
 
 ---
 
-## ✨ المميزات | Features\n\nالوظائف العامة والمكونات الرئيسية للمشروع · A summary of the project's main components.
+## ✨ المميزات
+### 🇬🇧 Features
+
+الوظائف العامة والمكونات الرئيسية للمشروع · A summary of the project's main components.
 
 | الميزة | Feature | الوصف | Description |
 |:--|:--:|:--|:--|
@@ -69,7 +87,9 @@
 
 ---
 
-## 🛠️ المتطلبات | Requirements
+## 🛠️ المتطلبات
+
+### 🇸🇦 العربية
 
 | المتطلب | Requirement | التفاصيل | Details |
 |:--|:--|:--|:--|
@@ -81,7 +101,13 @@
 
 ---
 
-## 🚀 التثبيت والإعداد | Setup & Installation\n\nاتبع متطلبات البيئة وإرشادات الإعداد قبل فحص ملفات المشروع.\n\nReview the environment requirements and setup notes before inspecting the project.
+## 🚀 التثبيت والإعداد
+
+### 🇸🇦 العربية
+
+اتبع متطلبات البيئة وإرشادات الإعداد قبل فحص ملفات المشروع.
+
+Review the environment requirements and setup notes before inspecting the project.
 
 ### 1. تثبيت Node.js وTermux | Install Node.js & Termux
 
@@ -154,7 +180,9 @@ To check JavaScript syntax without executing the application or connecting to Di
 
 ---
 
-## 🎮 نظرة عامة على الواجهة والملفات | Interface & Files Overview
+## 🎮 نظرة عامة على الواجهة والملفات
+
+### 🇸🇦 العربية
 
 ### 🖥️ واجهة الأداة | Terminal Interface
 
@@ -170,7 +198,11 @@ To check JavaScript syntax without executing the application or connecting to Di
 
 ---
 
-## 📁 هيكل الملفات | Project Structure\n\nنظرة منظمة على الملفات الأساسية ووظيفة كل منها · A concise map of the main project files.
+## 📁 هيكل الملفات
+
+### 🇸🇦 العربية
+
+نظرة منظمة على الملفات الأساسية ووظيفة كل منها · A concise map of the main project files.
 
 ```text
 discord-server-generator/
@@ -194,7 +226,13 @@ discord-server-generator/
 
 ---
 
-## 🔐 الأمان | Security\n\n> تعامل مع بيانات المصادقة والروابط الخاصة باعتبارها معلومات حساسة.\n\nTreat credentials and private links as sensitive information.
+## 🔐 الأمان
+
+### 🇸🇦 العربية
+
+> تعامل مع بيانات المصادقة والروابط الخاصة باعتبارها معلومات حساسة.
+
+Treat credentials and private links as sensitive information.
 
 - لا تنشر رموز الدخول أو بيانات المصادقة.
 - لا ترفع ملف `.env` إلى GitHub.
@@ -216,7 +254,9 @@ Security best practices:
 
 ---
 
-## ❓ الأسئلة الشائعة | FAQ
+## ❓ الأسئلة الشائعة
+
+### 🇸🇦 العربية
 
 <details>
 <summary><strong>🔴 ماذا يعني الخطأ TOKEN_INVALID؟</strong></summary>
@@ -260,7 +300,9 @@ It is not a safe or supported usage pattern. Self-Bots violate Discord's Terms o
 
 ---
 
-## 🔗 المراجع الرسمية | Official Resources
+## 🔗 المراجع الرسمية
+
+### 🇸🇦 العربية
 
 - [Discord Official Website](https://discord.com/)
 - [Discord Developer Portal](https://discord.com/developers/applications)
@@ -271,7 +313,9 @@ It is not a safe or supported usage pattern. Self-Bots violate Discord's Terms o
 
 ---
 
-## ⚖️ إخلاء المسؤولية القانوني | Legal Notice
+## ⚖️ إخلاء المسؤولية القانوني
+
+### 🇸🇦 العربية
 
 هذا المشروع مستقل ومقدم كما هو، ولا توجد أي علاقة رسمية بينه وبين Discord Inc. لا يقدم المطور أي ضمان لاستمرارية عمل الخدمات الخارجية أو توافقها. يتحمل المستخدم مسؤولية التأكد من أن استخدامه للمشروع يتوافق مع القوانين والشروط المعمول بها.
 
