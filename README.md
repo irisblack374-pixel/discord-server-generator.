@@ -102,8 +102,10 @@ The interface is built with the `blessed` library. The project includes componen
 
 ## 🚀 التثبيت والإعداد | Setup & Installation
 
-**1. تثبيت Node.js والبيئة | Install Node.js & Environment:**
-تأكد من تثبيت Node.js (الإصدار 18 أو أحدث). في Termux على الأندرويد:
-```bash
-pkg update
-pkg install nodejs git
+### تجهيز البيئة | Prepare the environment
+
+1. ثبّت Node.js وnpm من مصدرهما الرسمي. في Termux يمكن تثبيت Node.js بالأمر:
+
+   ```bash
+   pkg update
+   pkg install nodejs git
