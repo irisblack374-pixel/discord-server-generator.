@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Discord Server Generator
+# <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/server.svg" width="20" height="20" alt="" align="absmiddle"> Discord Server Generator
 
 ### A Node.js Terminal Application
 ### أداة طرفية لإدارة عمليات سيرفرات Discord
@@ -19,13 +19,13 @@
 ---
 
 > [!CAUTION]
-> ## ⚠️ تنبيه مهم وإخلاء المسؤولية | Disclaimer
+> ## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/shield-alert.svg" width="20" height="20" alt="" align="absmiddle"> تنبيه مهم وإخلاء المسؤولية | Disclaimer
 >
-> ### 🇸🇦 العربية
+> ### العربية · AR
 
  هذا المشروع يتضمن آلية **Self-Bot (User Token)** بدلاً من الاعتماد حصراً على حساب بوت رسمي. استخدام Self-Bots يخالف شروط خدمة Discord (Terms of Service)، وقد يؤدي إلى تقييد الحساب أو حظره نهائياً. استخدامك للمشروع يكون على مسؤوليتك الشخصية بالكامل. أنت تتحمل مسؤولية أي نتائج، بما في ذلك حظر الحساب أو فقدان البيانات. لا يتحمل مطور المشروع مسؤولية أي أضرار ناتجة عن الاستخدام. المشروع غير رسمي وغير تابع لـDiscord Inc. أو معتمد منها.
 >
-> ### 🇬🇧 English
+> ### English · EN
 
  This project includes **Self-Bot (User Token)** functionality rather than relying exclusively on an official Discord bot account. Self-Bots violate Discord's Terms of Service and may result in account restrictions or permanent suspension. You use this project entirely at your own risk and are responsible for any consequences, including account bans or data loss. The developer accepts no responsibility for damages resulting from use. This is an unofficial project and is not affiliated with or endorsed by Discord Inc.
 
@@ -33,63 +33,63 @@
 
 <div align="center">
 
-## 🧭 دليل المحتويات | Navigation
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/list.svg" width="20" height="20" alt="" align="absmiddle"> دليل المحتويات | Navigation
 
 *انتقل مباشرةً إلى القسم الذي تحتاجه · Jump to any section*
 
 </div>
 
-- [📖 نبذة عن المشروع | About](#-نبذة-عن-المشروع--about)
-- [✨ المميزات | Features](#-المميزات--features)
-- [🛠️ المتطلبات | Requirements](#️-المتطلبات--requirements)
-- [🚀 التثبيت والإعداد | Setup & Installation](#-التثبيت-والإعداد--setup--installation)
-- [🎮 نظرة عامة على الواجهة والملفات | Interface & Files Overview](#-نظرة-عامة-على-الواجهة-والملفات--interface--files-overview)
-- [📁 هيكل الملفات | Project Structure](#-هيكل-الملفات--project-structure)
-- [🔐 الأمان | Security](#-الأمان--security)
-- [❓ الأسئلة الشائعة | FAQ](#-الأسئلة-الشائعة--faq)
-- [🔗 المراجع الرسمية | Official Resources](#-المراجع-الرسمية--official-resources)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/info.svg" width="20" height="20" alt="" align="absmiddle"> نبذة عن المشروع | About](#-نبذة-عن-المشروع--about)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/sparkles.svg" width="20" height="20" alt="" align="absmiddle"> المميزات | Features](#-المميزات--features)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/list-check.svg" width="20" height="20" alt="" align="absmiddle"> المتطلبات | Requirements](#️-المتطلبات--requirements)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/download.svg" width="20" height="20" alt="" align="absmiddle"> التثبيت والإعداد | Setup & Installation](#-التثبيت-والإعداد--setup--installation)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/panels-top-left.svg" width="20" height="20" alt="" align="absmiddle"> نظرة عامة على الواجهة والملفات | Interface & Files Overview](#-نظرة-عامة-على-الواجهة-والملفات--interface--files-overview)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/folder-tree.svg" width="20" height="20" alt="" align="absmiddle"> هيكل الملفات | Project Structure](#-هيكل-الملفات--project-structure)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/shield-check.svg" width="20" height="20" alt="" align="absmiddle"> الأمان | Security](#-الأمان--security)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/circle-help.svg" width="20" height="20" alt="" align="absmiddle"> الأسئلة الشائعة | FAQ](#-الأسئلة-الشائعة--faq)
+- [<img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/book-open.svg" width="20" height="20" alt="" align="absmiddle"> المراجع الرسمية | Official Resources](#-المراجع-الرسمية--official-resources)
 
 ---
 
-## 📖 نبذة عن المشروع
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/info.svg" width="20" height="20" alt="" align="absmiddle"> نبذة عن المشروع
 ### 🇬🇧 About the Project
 
 > **Project overview** · نظرة سريعة على فكرة المشروع وتقنياته.
 
-### 🇸🇦 العربية
+### العربية · AR
 
 **Discord Server Generator** أداة طرفية مكتوبة بلغة JavaScript باستخدام Node.js. صُممت لتنظيم بعض العمليات المتعلقة بسيرفرات Discord من خلال واجهة طرفية تفاعلية (TUI). تعتمد الواجهة على مكتبة `blessed`، ويتضمن المشروع مكونات لإدارة الإعدادات ومتابعة الأحداث والتعامل مع سجلات الروابط والأخطاء.
 
-### 🇬🇧 English
+### English · EN
 
 **Discord Server Generator** is a terminal application written in JavaScript and powered by Node.js. It is designed to organize Discord server-related workflows through an interactive Terminal User Interface (TUI). The interface uses the `blessed` library, and the project includes components for configuration, activity monitoring, link records, and error handling.
 
 ---
 
-## ✨ المميزات
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/sparkles.svg" width="20" height="20" alt="" align="absmiddle"> المميزات
 ### 🇬🇧 Features
 
 الوظائف العامة والمكونات الرئيسية للمشروع · A summary of the project's main components.
 
 | الميزة | Feature | الوصف | Description |
 |:--|:--:|:--|:--|
-| 🖥️ واجهة طرفية تفاعلية | Interactive TUI | واجهة تفاعلية باستخدام مكتبة `blessed`. | Interactive terminal interface powered by `blessed`. |
-| ⚙️ إدخال الإعدادات | Configurable Input | إدخال الخيارات من خلال الواجهة. | Enter options through the terminal interface. |
-| 🌐 تكامل OAuth2 | OAuth2 Integration | مكونات للتعامل مع روابط التفويض. | Components for handling authorization links. |
-| 📋 متابعة الأحداث | Activity Monitoring | متابعة الأحداث ذات الصلة. | Monitoring of relevant events. |
-| 🔗 إدارة الروابط | Link Management | حفظ سجلات الروابط محلياً. | Local link record management. |
-| 🔄 معالجة الأخطاء | Error Handling | التعامل مع الأخطاء والاستجابات غير المتوقعة. | Handling errors and unexpected responses. |
-| ⏱️ التعامل مع حدود الطلبات | Rate Limit Handling | مراعاة استجابات حدود الطلبات. | Awareness of rate-limit responses. |
-| 📱 دعم Termux | Termux Compatibility | إمكانية تجهيز بيئة Node.js على Android. | Node.js environment setup on Android. |
+| واجهة طرفية تفاعلية | Interactive TUI | واجهة تفاعلية باستخدام مكتبة `blessed`. | Interactive terminal interface powered by `blessed`. |
+| إدخال الإعدادات | Configurable Input | إدخال الخيارات من خلال الواجهة. | Enter options through the terminal interface. |
+| تكامل OAuth2 | OAuth2 Integration | مكونات للتعامل مع روابط التفويض. | Components for handling authorization links. |
+| متابعة الأحداث | Activity Monitoring | متابعة الأحداث ذات الصلة. | Monitoring of relevant events. |
+| إدارة الروابط | Link Management | حفظ سجلات الروابط محلياً. | Local link record management. |
+| معالجة الأخطاء | Error Handling | التعامل مع الأخطاء والاستجابات غير المتوقعة. | Handling errors and unexpected responses. |
+| التعامل مع حدود الطلبات | Rate Limit Handling | مراعاة استجابات حدود الطلبات. | Awareness of rate-limit responses. |
+| دعم Termux | Termux Compatibility | إمكانية تجهيز بيئة Node.js على Android. | Node.js environment setup on Android. |
 
 > **ملاحظة | Note:** ذكر هذه المميزات لا يعني أن المشروع معتمد من Discord أو أن جميع عملياته مدعومة رسمياً.  
 > These features do not imply Discord endorsement or official support for every operation.
 
 ---
 
-## 🛠️ المتطلبات
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/list-check.svg" width="20" height="20" alt="" align="absmiddle"> المتطلبات
 
-### 🇸🇦 العربية
+### العربية · AR
 
 | المتطلب | Requirement | التفاصيل | Details |
 |:--|:--|:--|:--|
@@ -101,9 +101,9 @@
 
 ---
 
-## 🚀 التثبيت والإعداد
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/download.svg" width="20" height="20" alt="" align="absmiddle"> التثبيت والإعداد
 
-### 🇸🇦 العربية
+### العربية · AR
 
 اتبع متطلبات البيئة وإرشادات الإعداد قبل فحص ملفات المشروع.
 
@@ -180,17 +180,17 @@ To check JavaScript syntax without executing the application or connecting to Di
 
 ---
 
-## 🎮 نظرة عامة على الواجهة والملفات
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/panels-top-left.svg" width="20" height="20" alt="" align="absmiddle"> نظرة عامة على الواجهة والملفات
 
-### 🇸🇦 العربية
+### العربية · AR
 
-### 🖥️ واجهة الأداة | Terminal Interface
+### <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/terminal.svg" width="20" height="20" alt="" align="absmiddle"> واجهة الأداة | Terminal Interface
 
 **العربية:** تستخدم الأداة واجهة طرفية تفاعلية مبنية بمكتبة `blessed`. حقل الإدخال مخصص لاستقبال القيمة أو الخيار الذي تعرضه الواجهة في المرحلة الحالية. تعرض الواجهة حالة التفاعل والرسائل المرتبطة به. هذا وصف عام لمكونات الواجهة، وليس دليلاً لتنفيذ عمليات Self-Bot.
 
 **English:** The application uses an interactive terminal interface built with `blessed`. Its input field receives the value or option requested by the current screen, while the interface displays interaction status and related messages. This is a general description of the UI, not an operational guide for Self-Bot activity.
 
-### 🔗 ملف الروابط | Links File
+### <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/link.svg" width="20" height="20" alt="" align="absmiddle"> ملف الروابط | Links File
 
 **العربية:** ملف `links.txt` مخصص للاحتفاظ بسجلات الروابط التي ينتجها التطبيق، بحيث تبقى السجلات النصية متاحة للمراجعة لاحقاً. تعامل مع محتوياته بحذر، ولا تنشر روابط خاصة أو بيانات قد تمنح وصولاً غير مقصود.
 
@@ -198,9 +198,9 @@ To check JavaScript syntax without executing the application or connecting to Di
 
 ---
 
-## 📁 هيكل الملفات
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/folder-tree.svg" width="20" height="20" alt="" align="absmiddle"> هيكل الملفات
 
-### 🇸🇦 العربية
+### العربية · AR
 
 نظرة منظمة على الملفات الأساسية ووظيفة كل منها · A concise map of the main project files.
 
@@ -226,9 +226,9 @@ discord-server-generator/
 
 ---
 
-## 🔐 الأمان
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/shield-check.svg" width="20" height="20" alt="" align="absmiddle"> الأمان
 
-### 🇸🇦 العربية
+### العربية · AR
 
 > تعامل مع بيانات المصادقة والروابط الخاصة باعتبارها معلومات حساسة.
 
@@ -254,12 +254,12 @@ Security best practices:
 
 ---
 
-## ❓ الأسئلة الشائعة
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/circle-help.svg" width="20" height="20" alt="" align="absmiddle"> الأسئلة الشائعة
 
-### 🇸🇦 العربية
+### العربية · AR
 
 <details>
-<summary><strong>🔴 ماذا يعني الخطأ TOKEN_INVALID؟</strong></summary>
+<summary><strong><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/alert-circle.svg" width="20" height="20" alt="" align="absmiddle"> ماذا يعني الخطأ TOKEN_INVALID؟</strong></summary>
 
 يعني أن بيانات المصادقة المقدمة لم يتم قبولها. تحقق من إعداداتك، ولا تشارك بيانات الدخول مع أي شخص.
 
@@ -267,7 +267,7 @@ It means the supplied authentication credentials were rejected. Review your conf
 </details>
 
 <details>
-<summary><strong>🟠 لماذا لا يتم التعرف على البوت؟</strong></summary>
+<summary><strong><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/bot.svg" width="20" height="20" alt="" align="absmiddle"> لماذا لا يتم التعرف على البوت؟</strong></summary>
 
 قد تكون هناك مشكلة في إعدادات التطبيق أو Client ID أو الصلاحيات. راجع إعدادات التطبيق في Discord Developer Portal.
 
@@ -275,7 +275,7 @@ The application configuration, Client ID, or permissions may be incorrect. Revie
 </details>
 
 <details>
-<summary><strong>🟡 لماذا لا يفتح المتصفح تلقائياً؟</strong></summary>
+<summary><strong><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/globe.svg" width="20" height="20" alt="" align="absmiddle"> لماذا لا يفتح المتصفح تلقائياً؟</strong></summary>
 
 قد يعتمد ذلك على بيئة التشغيل وإعدادات Android ومكونات Termux المتوافقة، بما في ذلك Termux:API عند الحاجة.
 
@@ -283,7 +283,7 @@ This may depend on the runtime environment, Android settings, and compatible Ter
 </details>
 
 <details>
-<summary><strong>🔵 هل الأداة رسمية من Discord؟</strong></summary>
+<summary><strong><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/badge-check.svg" width="20" height="20" alt="" align="absmiddle"> هل الأداة رسمية من Discord؟</strong></summary>
 
 لا. هذا مشروع مستقل وغير تابع لشركة Discord Inc. أو معتمد منها.
 
@@ -291,7 +291,7 @@ No. This is an independent project and is not affiliated with or endorsed by Dis
 </details>
 
 <details>
-<summary><strong>🟣 هل استخدام Self-Bot آمن؟</strong></summary>
+<summary><strong><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/shield-alert.svg" width="20" height="20" alt="" align="absmiddle"> هل استخدام Self-Bot آمن؟</strong></summary>
 
 لا يمكن اعتباره استخداماً آمناً أو مدعوماً؛ فهو يخالف شروط خدمة Discord وقد يؤدي إلى تقييد الحساب أو حظره.
 
@@ -300,9 +300,9 @@ It is not a safe or supported usage pattern. Self-Bots violate Discord's Terms o
 
 ---
 
-## 🔗 المراجع الرسمية
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/book-open.svg" width="20" height="20" alt="" align="absmiddle"> المراجع الرسمية
 
-### 🇸🇦 العربية
+### العربية · AR
 
 - [Discord Official Website](https://discord.com/)
 - [Discord Developer Portal](https://discord.com/developers/applications)
@@ -313,9 +313,9 @@ It is not a safe or supported usage pattern. Self-Bots violate Discord's Terms o
 
 ---
 
-## ⚖️ إخلاء المسؤولية القانوني
+## <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/scale.svg" width="20" height="20" alt="" align="absmiddle"> إخلاء المسؤولية القانوني
 
-### 🇸🇦 العربية
+### العربية · AR
 
 هذا المشروع مستقل ومقدم كما هو، ولا توجد أي علاقة رسمية بينه وبين Discord Inc. لا يقدم المطور أي ضمان لاستمرارية عمل الخدمات الخارجية أو توافقها. يتحمل المستخدم مسؤولية التأكد من أن استخدامه للمشروع يتوافق مع القوانين والشروط المعمول بها.
 
