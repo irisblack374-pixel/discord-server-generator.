@@ -1,17 +1,20 @@
+<div align="center">
+
 # 🚀 Discord Server Generator
 
-<p align="center">
-  <strong>A Node.js Terminal Tool for Discord Server Automation</strong>
-  <br>
-  <strong>أداة طرفية لأتمتة عمليات سيرفرات ديسكورد</strong>
+### A Node.js Terminal Application
+### أداة طرفية لإدارة عمليات سيرفرات Discord
+
+<p>
+  <img alt="Node.js 18+" src="https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img alt="Terminal UI" src="https://img.shields.io/badge/Terminal-Interactive-3867D6?style=for-the-badge">
+  <img alt="Unofficial project" src="https://img.shields.io/badge/Discord-Unofficial-5865F2?style=for-the-badge&logo=discord&logoColor=white">
 </p>
 
-<p align="center">
-  <img alt="Node.js 18+" src="https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white">
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-  <img alt="Terminal UI" src="https://img.shields.io/badge/Interface-Terminal-blue?style=flat-square">
-  <img alt="Unofficial Discord project" src="https://img.shields.io/badge/Discord-Unofficial-5865F2?style=flat-square&logo=discord&logoColor=white">
-</p>
+**English** · [العربية](#-نبذة-عن-المشروع--about)
+
+</div>
 
 ---
 
@@ -24,7 +27,7 @@
 
 ---
 
-## 📚 المحتويات | Table of Contents
+<div align="center">\n\n## 🧭 دليل المحتويات | Navigation\n\n*انتقل مباشرةً إلى القسم الذي تحتاجه · Jump to any section*\n\n</div>
 
 - [📖 نبذة عن المشروع | About](#-نبذة-عن-المشروع--about)
 - [✨ المميزات | Features](#-المميزات--features)
@@ -38,7 +41,7 @@
 
 ---
 
-## 📖 نبذة عن المشروع | About
+## 📖 نبذة عن المشروع | About\n\n> **Project overview** · نظرة سريعة على فكرة المشروع وتقنياته.
 
 ### 🇸🇦 العربية
 **Discord Server Generator** أداة طرفية مكتوبة بلغة JavaScript باستخدام Node.js. صُممت لتنظيم بعض العمليات المتعلقة بسيرفرات Discord من خلال واجهة طرفية تفاعلية (TUI). تعتمد الواجهة على مكتبة `blessed`، ويتضمن المشروع مكونات لإدارة الإعدادات ومتابعة الأحداث والتعامل مع سجلات الروابط والأخطاء.
@@ -48,7 +51,7 @@
 
 ---
 
-## ✨ المميزات | Features
+## ✨ المميزات | Features\n\nالوظائف العامة والمكونات الرئيسية للمشروع · A summary of the project's main components.
 
 | الميزة | Feature | الوصف | Description |
 |:--|:--:|:--|:--|
@@ -78,7 +81,7 @@
 
 ---
 
-## 🚀 التثبيت والإعداد | Setup & Installation
+## 🚀 التثبيت والإعداد | Setup & Installation\n\nاتبع متطلبات البيئة وإرشادات الإعداد قبل فحص ملفات المشروع.\n\nReview the environment requirements and setup notes before inspecting the project.
 
 ### 1. تثبيت Node.js وTermux | Install Node.js & Termux
 
@@ -167,7 +170,7 @@ To check JavaScript syntax without executing the application or connecting to Di
 
 ---
 
-## 📁 هيكل الملفات | Project Structure
+## 📁 هيكل الملفات | Project Structure\n\nنظرة منظمة على الملفات الأساسية ووظيفة كل منها · A concise map of the main project files.
 
 ```text
 discord-server-generator/
@@ -191,7 +194,7 @@ discord-server-generator/
 
 ---
 
-## 🔐 الأمان | Security
+## 🔐 الأمان | Security\n\n> تعامل مع بيانات المصادقة والروابط الخاصة باعتبارها معلومات حساسة.\n\nTreat credentials and private links as sensitive information.
 
 - لا تنشر رموز الدخول أو بيانات المصادقة.
 - لا ترفع ملف `.env` إلى GitHub.
