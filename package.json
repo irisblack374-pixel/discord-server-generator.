@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Discord Server Gen - Node.js terminal application",
-  "main": "index.js",
+  "main": "mass.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node mass.js"
   },
   "dependencies": {
     "blessed": "^0.1.81",
